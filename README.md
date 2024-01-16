@@ -1,7 +1,3 @@
-# GuardianPass
-### Plugin Name: Simple Password Protect
-
-#### Description:
 The GuardianPass WordPress plugin allows you to easily password-protect individual pages or posts on your website. When a page or post is password-protected, visitors will be prompted to enter a password before accessing the content.
 
 #### Features:
