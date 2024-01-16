@@ -13,6 +13,7 @@ The GuardianPass WordPress plugin allows you to easily password-protect individu
 1. Edit the page or post you want to protect.
 2. Set a password in the "Visibility" options.
 3. Save your changes.
+4. Additionally, you can manually use the [guardianpass] shortcode in the content of a page or post to insert the password form at a specific location within the content.
 
 #### Styling:
 Feel free to customize the appearance of the password form by modifying the included `styles.css` file. Adjust colors, sizes, and other styles to match your website's design.
