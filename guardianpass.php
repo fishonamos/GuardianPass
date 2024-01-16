@@ -9,7 +9,9 @@
 function guardianpass_content($content) {
     global $post;
 
+    //check page to know if is has password
     if (post_password_required($post)) {
+        // Display password form
         $password_form = '<form action="' . esc_url(site_url('wp-login.php?action=postpass', 'login_post')) . '" method="post">
                             <label for="password">' . esc_html__('Password:', 'guardianpass') . '</label>
                             <input type="password" name="post_password" id="password" size="20" />
@@ -24,8 +26,16 @@ function guardianpass_content($content) {
 
 add_filter('the_content', 'guardianpass_content');
 
-function guardianpass_styles() {
-    wp_enqueue_style('guardianpass-styles', plugin_dir_url(__FILE__) . 'styles.css');
+// Shortcode
+function guardianpass_shortcode($atts) {
+    // Display password
+    $password_form = '<form action="' . esc_url(site_url('wp-login.php?action=postpass', 'login_post')) . '" method="post">
+                        <label for="password">' . esc_html__('Password:', 'guardianpass') . '</label>
+                        <input type="password" name="post_password" id="password" size="20" />
+                        <input type="submit" name="Submit" value="' . esc_attr__('Submit', 'guardianpass') . '" />
+                    </form>';
+
+    return $password_form;
 }
 
-add_action('wp_enqueue_scripts', 'guardianpass_styles');
+add_shortcode('guardianpass', 'guardianpass_shortcode');
