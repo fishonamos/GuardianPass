@@ -17,13 +17,6 @@ The GuardianPass WordPress plugin allows you to easily password-protect individu
 #### Styling:
 Feel free to customize the appearance of the password form by modifying the included `styles.css` file. Adjust colors, sizes, and other styles to match your website's design.
 
-#### Frequently Asked Questions:
-**Q: Can I customize the password form?**
-A: Yes, you can customize the appearance of the password form by editing the `styles.css` file included with the plugin.
-
-**Q: Is it possible to password-protect multiple pages?**
-A: Yes, you can password-protect as many pages or posts as needed.
-
 #### Changelog:
 - **1.0**
   - Initial release.
